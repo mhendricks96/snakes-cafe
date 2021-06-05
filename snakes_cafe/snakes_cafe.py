@@ -34,19 +34,36 @@ print("***********************************")
 print("** What would you like to order? **")
 print("***********************************")
 
+
+# Global Variables
 chosen_items = {}
 
-chosen_item = input ("> ")
-chosen_items[chosen_item] = 1
+# Functions
+def addChoice(choice):
+  
+  print(choice)
+  if choice == "quit":
+    print(f"Goodbye! Here is what you have in your meal {chosen_items}")
+    quit()
+  elif choice in chosen_items:
+    chosen_items[choice] = chosen_items[choice] + 1
+    print(f"{chosen_items[choice]} orders of {choice} has been added to your meal")
+    askAgain()
+  else:
+    chosen_items[choice] = 1
+    print(f"{chosen_items[choice]} order of {choice} has been added to your meal")
+    askAgain()
 
-print(f"{len(chosen_items)} order of {chosen_item} has been added to your meal")
+def askAgain():
+  userChoice = input("anything else? > ")
+  addChoice(userChoice)   
 
-print("Anything Else?")
-second_choice = input("> ")
+#Executable Code
+userChoice = input("> ")
+addChoice(userChoice)
 
-if second_choice == chosen_item:
-  chosen_items[chosen_item] = 2
-  print(f"{chosen_items[chosen_item]} orders of {chosen_item} has been added to your meal")
-else:
-  chosen_items[second_choice] = 1
-  print(f"{chosen_items[second_choice]} order of {second_choice} has been added to your meal")
+
+
+
+
+
