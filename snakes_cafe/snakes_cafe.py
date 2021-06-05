@@ -46,7 +46,7 @@ second_choice = input("> ")
 
 if second_choice == chosen_item:
   chosen_items[chosen_item] = 2
-  print(f"2 orders of {chosen_item} has been added to your meal")
+  print(f"{chosen_items[chosen_item]} orders of {chosen_item} has been added to your meal")
 else:
   chosen_items[second_choice] = 1
-  print(f"1 order of {second_choice} has been added to your meal")
+  print(f"{chosen_items[second_choice]} order of {second_choice} has been added to your meal")
