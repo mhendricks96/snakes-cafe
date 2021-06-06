@@ -4,35 +4,36 @@ print("**    Please see our menu below.    **")
 print("**                                  **")
 print('** To quit at any time, type "quit" **')
 print("**************************************")
-print(" ")
-print("Appetizers")
-print("----------")
-print("Wings")
-print("Cookies")
-print("Spring Rolls")
-print(" ")
-print("Entrees")
-print("-------")
-print("Salmon")
-print("Steak")
-print("Meat Tornado")
-print("A Literal Garden")
-print(" ")
-print("Desserts")
-print("--------")
-print("Ice Cream")
-print("Cake")
-print("Pie")
-print(" ")
-print("Drinks")
-print("------")
-print("Coffee")
-print("Tea")
-print("Unicorn Tears")
-print(" ")
+print(
+  '''
+    Appetizers
+    ----------
+    Wings
+    Cookies
+    Spring Rolls
+    Entrees
+    -------
+    Salmon
+    Steak
+    Meat Tornado
+    A Literal Garden
+    Desserts
+    --------
+    Ice Cream
+    Cake
+    Pie
+    Drinks
+    ------
+    Coffee
+    Tea
+    Unicorn Tears
+    '''
+)
 print("***********************************")
 print("** What would you like to order? **")
 print("***********************************")
+
+
 
 
 # Global Variables
